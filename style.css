@@ -1,0 +1,33 @@
+body {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
+}
+
+.container {
+
+}
+
+.nav-bar {
+    margin: 0;
+    width: auto;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer {
+    background: #f2f2f2;
+}
+
+.user-pfp {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
