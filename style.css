@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 body {
     font-size: 14px;
     font-family: arial,sans-serif;
@@ -5,7 +11,11 @@ body {
 }
 
 .container {
-
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 20%;
 }
 
 .nav-bar {
@@ -13,12 +23,22 @@ body {
     width: auto;
     height: 50px;
     padding: 10px;
-    display: flex;
-    justify-content: flex-end;
+    grid-column: 1 / 4; 
+    justify-self: end;
+}
+
+.nav-bar a{
+    padding: 10px;
+}
+
+.search {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: center;
 }
 
 .footer {
     background: #f2f2f2;
+    grid-area: 3 / 1 / 4 / 4;
 }
 
 .user-pfp {
@@ -30,4 +50,19 @@ body {
 a {
     color: #222;
     text-decoration: none;
+}
+
+#search-bar {
+    border-radius: 50px;
+    padding: 12px;
+    width: 100%;
+    grid-area: 1 / 4;
+}
+
+input#search-bar {
+    border: 1px solid lightgrey;
+}
+
+input#search-bar:focus {
+    outline: none;
 }
